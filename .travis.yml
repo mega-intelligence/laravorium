@@ -4,6 +4,6 @@ php:
 before_script:
   - composer install
   - cp .env.example .env
-  - php artisan make:key
+  - php artisan key:generate
 script:
-  - phpunit
+  - php vendor/bin/phpunit
