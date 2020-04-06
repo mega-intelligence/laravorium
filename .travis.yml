@@ -6,4 +6,4 @@ before_script:
   - cp .env.example .env
   - php artisan key:generate
 script:
-  - php vendor/bin/phpunit
+  - php artisan test
